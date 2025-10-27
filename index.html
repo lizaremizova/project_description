@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>projekta apraksts</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <img src="src/goalflow.png">
+       <div>
+           <button id="toggle">dark mode</button>
+           <nav>
+               <a href="#main">home</a>
+               <a href="#cards">about</a>
+               <a href="#stack">stack</a>
+               <a href="#footer">contact</a>
+           </nav>
+       </div>
+    </header>
+
+
+    <main id="main">
+
+        <div class="text">
+            <div>
+                <h1>GoalFlow</h1>
+                <h2>personīgais ceļvedis mērķiem un iedvesmai</h2>
+            </div>
+
+            <p>
+                Sekojiet savam progresam, atklājiet motivējošas idejas un vizuāli sakārtojiet savus mērķus. Viss vienuviet — lai sasniegtu vairāk un justos iedvesmots katru dienu.
+                Vietne apvieno praktisku attīstību ar estētisku baudījumu, padarot progresu redzamu un motivējošu.
+            </p>
+
+            <a href="#cards" class="btn">
+                view more
+            </a>
+        </div>
+
+        <img src="src/main.jpg">
+
+    </main>
+
+     <section id="cards">
+        <h1>
+            Galvenas funkcijas
+        </h1>
+        <div class="kartes">
+            <div class="card">
+                <h2>feature 1</h2>
+                <p>
+                    Mērķi un progress: seko saviem mērķiem, redzi progresu un vizuāli atzīmē sasniegumus.
+                </p>
+                <img src="src/goal.png" class="icon">
+            </div>
+
+            <div id="feat">
+                <h2>feature 2</h2>
+                <p>
+                    Iedvesmas plūsma: personalizēta lapa ar skaistām bildēm un citātiem, kas atbilst tavām mērķu tēmām.
+                </p>
+                <img src="src/Group.png" class="icon">
+            </div>
+
+            <div class="card">
+                <h2>feature 3</h2>
+                <p>
+                    Mindmap: vizuāli veido mērķu karti un sasaisti idejas, lai labāk redzētu savu ceļu.
+                </p>
+                <img src="src/map.png" class="icon">
+            </div>
+
+        </div>
+     </section>
+
+    <section id="stack">
+        <img src="src/stack.jpg">
+        <div>
+            <h1>
+                Stack
+            </h1>
+            <p>
+                Frontend: React + TailwindCSS — interaktīvs un vizuāli skaists interfeiss.
+
+                Datu bāze: Postgres caur Supabase — visi mērķi, progresi un iedvesmas resursi glabājas droši mākoņā.
+
+                Backend: Supabase API — gatavs risinājums datu pārvaldībai un autorizācijai, savs serveris nav nepieciešams.
+
+                Mindmap: jsMind (vai React Flow) — vizuālās mērķu kartes veidošanai.
+
+                Iedvesma: Unsplash API (bildes).
+
+                Progresu vizualizācija: Chart.js — grafiki un izpildes indikatoru vizualizācija.
+            </p>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>kontakti: lizaremizovads@gmail.com   +371 20099655  </p>
+    </footer>
+
+    <script>
+        document.getElementById("toggle").onclick = () =>
+            document.body.classList.toggle("dark");
+    </script>
+</body>
+</html>

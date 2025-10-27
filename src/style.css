@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    background: #fff;
+    color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+body.dark {
+    background: #000000;
+    color: #eee;
+}
+body.dark header {
+    background: white;
+}
+body.dark nav{
+    background: black;
+}
+body.dark nav a{
+    color: white;
+}
+body.dark button{
+    background: black;
+    color: white;
+}
+body.dark .btn{
+    border: white 1px solid;
+    color: white;
+}
+body.dark main img{
+    border-radius: 40px;
+}
+body.dark #cards h1{
+    color: black;
+}
+body.dark .card:hover{
+    border: none;
+    box-shadow: 0 0 5px #000000, 0 0 20px #000000, 0 0 40px #000000;
+    transition: 1s;
+}
+body.dark #feat:hover{
+    border: none;
+    box-shadow: 0 0 5px #000000, 0 0 20px #000000, 0 0 40px #000000;
+    transition: 1s;
+}
+body.dark #cards{
+    background: white;
+    color: black;
+}
+body.dark .card{
+    background: black;
+    color: white;
+}
+body.dark #feat{
+    border: black 1px solid;
+    color: black;
+}
+body.dark #stack img{
+    border-radius: 40px;
+}
+body.dark #footer{
+    background: white;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+button {
+    margin-right: 10px;
+    background-color: white;
+    color: #000000;
+    border-radius: 30px;
+    align-items: center;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+    border: none;
+}
+header{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 50px;
+    margin: 40px;
+    margin-top: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+header div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    margin-right: 10px;
+    background-color: white;
+    color: white;
+    border-radius: 30px;
+    height: 22px;
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+nav a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+header img{
+    height: 45px;
+    margin-left: 10px;
+}
+.line{
+    height: 1px;
+    background-color: black;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px;
+}
+main img{
+    width: 600px;
+}
+.text{
+    width: 600px;
+}
+.text p{
+    font-size: 18px;
+    margin-bottom: 10%;
+}
+.text h1{
+    margin-bottom: 20px;
+    font-size: 86px;
+    font-weight: bold;
+    font-family: "Alata", sans-serif;
+}
+.btn {
+    margin-left: 0;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #000000, #000000);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.8s ease;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.btn:hover {
+    background-size: 100% 100%;
+    color: white;
+}
+
+.kartes{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    height: 90%;
+}
+#cards h1{
+    padding-top: 40px;
+    color: white;
+    font-size: 45px;
+    font-family: "Alata", sans-serif;
+}
+#cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    background-color: black;
+    margin: 40px;
+    border-radius: 50px;
+}
+.card {
+    background-color: white;
+    width: 20%;
+    border: black 1px solid;
+    height: 70%;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    animation: slide-in 1s ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.20;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.card:hover{
+    border: none;
+    box-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff;
+    transition: 1s;
+}
+.card img{
+    margin-left: 40%;
+    width: 70px;
+}
+#feat{
+    color: white;
+    width: 20%;
+    border: #ffffff 1px solid;
+    height: 70%;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    animation: slide-in 1s ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+#feat:hover{
+    border: none;
+    box-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff;
+    transition: 1s;
+}
+#feat img{
+    margin-left: 40%;
+    width: 60px;
+}
+#stack{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+    margin: 40px;gf
+    height: 600px;
+}
+
+#stack img{
+    width: 400px;
+}
+#stack h1{
+    margin-bottom: 20px;
+    font-size: 86px;
+    font-weight: bold;
+    font-family: "Alata", sans-serif;
+}
+#stack div{
+    width: 800px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50px;
+    margin: 40px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    color: white;
+}

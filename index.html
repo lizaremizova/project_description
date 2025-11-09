@@ -46,32 +46,16 @@
         <h1>
             Galvenas funkcijas
         </h1>
-        <div class="kartes">
-            <div class="card">
-                <h2>feature 1</h2>
-                <p>
-                    Mērķi un progress: seko saviem mērķiem, redzi progresu un vizuāli atzīmē sasniegumus.
-                </p>
-                <img src="src/goal.png" class="icon">
-            </div>
 
-            <div id="feat">
-                <h2>feature 2</h2>
-                <p>
-                    Iedvesmas plūsma: personalizēta lapa ar skaistām bildēm un citātiem, kas atbilst tavām mērķu tēmām.
-                </p>
-                <img src="src/Group.png" class="icon">
-            </div>
+         <div class="controls">
+             <input type="text" id="search" placeholder="Meklēt pēc nosaukuma">
+             <button id="sortAZ">A-Z</button>
+             <button id="sortZA">Z-A</button>
+         </div>
 
-            <div class="card">
-                <h2>feature 3</h2>
-                <p>
-                    Mindmap: vizuāli veido mērķu karti un sasaisti idejas, lai labāk redzētu savu ceļu.
-                </p>
-                <img src="src/map.png" class="icon">
-            </div>
 
-        </div>
+        <div class="kartes" id="cardsContainer"></div>
+
      </section>
 
     <section id="stack">
@@ -99,9 +83,6 @@
         <p>kontakti: lizaremizovads@gmail.com   +371 20099655  </p>
     </footer>
 
-    <script>
-        document.getElementById("toggle").onclick = () =>
-            document.body.classList.toggle("dark");
-    </script>
+    <script src="script.js"> </script>
 </body>
 </html>
